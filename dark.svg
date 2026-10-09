@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1180" height="610" viewBox="0 0 1180 610" role="img" aria-labelledby="title desc">
+  <title id="title">Developer profile banner — dark theme</title>
+  <desc id="desc">Animated CP monogram beside a glass terminal profile card with skills and social links.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="52%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#10B981">
+        <animate attributeName="offset" values="0.85;0.92;0.85" dur="7s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="panelGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#172554" stop-opacity=".75"/>
+      <stop offset="55%" stop-color="#0F172A" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#052E2B" stop-opacity=".75"/>
+    </linearGradient>
+    <linearGradient id="reflection" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".20"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".035"/>
+    </linearGradient>
+    <radialGradient id="blueOrb">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetOrb">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenOrb">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip"><rect x="18" y="18" width="1144" height="574" rx="28"/></clipPath>
+    <clipPath id="leftClip"><rect x="40" y="40" width="405" height="530" rx="22"/></clipPath>
+    <clipPath id="rightClip"><rect x="466" y="40" width="674" height="530" rx="22"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1180" height="610" fill="#030712"/>
+    <circle cx="160" cy="150" r="300" fill="url(#violetOrb)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;45 24;0 0" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="940" cy="450" r="330" fill="url(#blueOrb)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-35 -20;0 0" dur="21s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="10" r="250" fill="url(#greenOrb)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;30 18;0 0" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <g opacity="0.30" stroke="#243047" stroke-width="1">
+      <path d="M0 95H1180 M0 175H1180 M0 255H1180 M0 335H1180 M0 415H1180 M0 495H1180"/>
+      <path d="M90 0V610 M170 0V610 M250 0V610 M330 0V610 M410 0V610 M490 0V610 M570 0V610 M650 0V610 M730 0V610 M810 0V610 M890 0V610 M970 0V610 M1050 0V610 M1130 0V610"/>
+    </g>
+
+    <!-- Left monogram panel -->
+    <g clip-path="url(#leftClip)">
+      <rect x="40" y="40" width="405" height="530" rx="22" fill="url(#panelGlow)" stroke="#FFFFFF" stroke-opacity=".10"/>
+      <rect x="40" y="40" width="405" height="530" rx="22" fill="url(#reflection)"/>
+      <circle cx="242" cy="250" r="142" fill="url(#accent)" opacity=".13" filter="url(#softGlow)">
+        <animate attributeName="opacity" values=".08;.20;.08" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <g transform="translate(0 0)">
+        <rect x="70" y="72" width="345" height="30" rx="9" fill="#030712" fill-opacity=".45" stroke="#FFFFFF" stroke-opacity=".10"/>
+        <circle cx="88" cy="87" r="4" fill="#F87171"/>
+        <circle cx="102" cy="87" r="4" fill="#FBBF24"/>
+        <circle cx="116" cy="87" r="4" fill="#34D399"/>
+        <text x="242" y="91" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2" fill="#94A3B8">IDENTITY.SVG</text>
+      </g>
+      <g transform="translate(0 4)">
+        <text x="242" y="274" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="166" font-weight="800" letter-spacing="-14" fill="url(#accent)" stroke="url(#accent)" stroke-width="1">
+          CP
+          <animateTransform attributeName="transform" type="translate" values="0 4;0 -4;0 4" dur="6s" repeatCount="indefinite"/>
+        </text>
+        <text x="242" y="274" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="166" font-weight="800" letter-spacing="-14" fill="url(#accent)" opacity=".18" filter="url(#softGlow)">CP</text>
+      </g>
+      <rect x="60" y="125" width="365" height="2" fill="url(#accent)" opacity="0.16">
+        <animate attributeName="y" values="125;465;125" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <g fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1.8">
+        <text x="242" y="352" text-anchor="middle">BUILD • CREATE • ITERATE</text>
+        <text x="242" y="376" text-anchor="middle" fill="#F8FAFC" font-size="12" letter-spacing="2.5">DEVELOPER / CREATOR</text>
+      </g>
+      <g transform="translate(78 425)">
+        <rect width="329" height="76" rx="13" fill="#030712" fill-opacity=".34" stroke="#FFFFFF" stroke-opacity=".12"/>
+        <text x="18" y="25" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">STATUS</text>
+        <circle cx="22" cy="48" r="4" fill="#10B981">
+          <animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <text x="36" y="52" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13">Open to building something great</text>
+      </g>
+      <text x="242" y="542" text-anchor="middle" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2">EST. IN CURIOSITY</text>
+    </g>
+
+    <!-- Right terminal panel -->
+    <g clip-path="url(#rightClip)" filter="url(#cardShadow)">
+      <rect x="466" y="40" width="674" height="530" rx="22" fill="url(#panelGlow)" stroke="#FFFFFF" stroke-opacity=".15"/>
+      <rect x="466" y="40" width="674" height="530" rx="22" fill="url(#reflection)"/>
+      <rect x="466" y="40" width="674" height="3" fill="url(#accent)">
+        <animate attributeName="opacity" values=".5;1;.5" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="488" y="60" width="630" height="38" rx="10" fill="#030712" fill-opacity=".50" stroke="#FFFFFF" stroke-opacity=".10"/>
+      <circle cx="507" cy="79" r="4" fill="#F87171"/>
+      <circle cx="521" cy="79" r="4" fill="#FBBF24"/>
+      <circle cx="535" cy="79" r="4" fill="#34D399"/>
+      <text x="554" y="83" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">~/profile/README.md</text>
+      <text x="1098" y="83" text-anchor="end" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">LIVE</text>
+
+      <g font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+        <text x="508" y="143" fill="#94A3B8" font-size="13">Hi there 👋</text>
+        <text x="508" y="181" fill="#F8FAFC" font-size="30" font-weight="750">I'm <tspan fill="url(#accent)">CP</tspan></text>
+        <text x="508" y="207" fill="#94A3B8" font-size="14">Developer focused on thoughtful digital experiences.</text>
+        <text x="508" y="241" fill="#F8FAFC" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">$ <tspan fill="url(#accent)">whoami</tspan></text>
+        <text x="533" y="267" fill="#F8FAFC" font-size="15" font-weight="600">Frontend Developer</text>
+        <rect x="703" y="253" width="2" height="18" fill="#F8FAFC">
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+        <text x="533" y="291" fill="#94A3B8" font-size="12">Crafting responsive interfaces &amp; smooth interactions</text>
+      </g>
+
+      <g font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12">
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;1" begin=".3s" dur=".55s" fill="freeze"/>
+          <circle cx="515" cy="322" r="3" fill="#22D3EE"/>
+          <text x="527" y="326" fill="#94A3B8">Location</text><text x="610" y="326" fill="#F8FAFC">Tanzania</text>
+        </g>
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;1" begin=".7s" dur=".55s" fill="freeze"/>
+          <circle cx="760" cy="322" r="3" fill="#A78BFA"/>
+          <text x="772" y="326" fill="#94A3B8">Focus</text><text x="818" y="326" fill="#F8FAFC">Web experiences</text>
+        </g>
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;1" begin="1.1s" dur=".55s" fill="freeze"/>
+          <circle cx="515" cy="349" r="3" fill="#34D399"/>
+          <text x="527" y="353" fill="#94A3B8">Education</text><text x="610" y="353" fill="#F8FAFC">Learning by building</text>
+        </g>
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;1" begin="1.5s" dur=".55s" fill="freeze"/>
+          <circle cx="760" cy="349" r="3" fill="#FBBF24"/>
+          <text x="772" y="353" fill="#94A3B8">Portfolio</text><text x="832" y="353" fill="#F8FAFC">Projects &amp; experiments</text>
+        </g>
+      </g>
+
+      <path d="M508 374H1098" stroke="#243047" stroke-opacity=".9"/>
+      <text x="508" y="401" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="650">TECH STACK</text>
+      <text x="1098" y="401" text-anchor="end" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">TOOLS I USE</text>
+      <g transform="translate(508 416)"><rect width="68" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="3.50s" repeatCount="indefinite"/></rect><text x="34.0" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">React</text></g><g transform="translate(584 416)"><rect width="90" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="3.67s" repeatCount="indefinite"/></rect><text x="45.0" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">TypeScript</text></g><g transform="translate(682 416)"><rect width="102" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="3.84s" repeatCount="indefinite"/></rect><text x="51.0" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">Tailwind CSS</text></g><g transform="translate(792 416)"><rect width="112" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="4.01s" repeatCount="indefinite"/></rect><text x="56.0" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">Framer Motion</text></g><g transform="translate(912 416)"><rect width="77" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="4.18s" repeatCount="indefinite"/></rect><text x="38.5" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">Node.js</text></g><g transform="translate(997 416)"><rect width="101" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="4.35s" repeatCount="indefinite"/></rect><text x="50.5" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">PostgreSQL</text></g><g transform="translate(508 456)"><rect width="91" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="4.52s" repeatCount="indefinite"/></rect><text x="45.5" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">JavaScript</text></g><g transform="translate(607 456)"><rect width="52" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="4.69s" repeatCount="indefinite"/></rect><text x="26.0" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">Git</text></g><g transform="translate(667 456)"><rect width="62" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="4.86s" repeatCount="indefinite"/></rect><text x="31.0" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">Figma</text></g><g transform="translate(737 456)"><rect width="74" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="5.03s" repeatCount="indefinite"/></rect><text x="37.0" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">Express</text></g><g transform="translate(819 456)"><rect width="67" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="5.20s" repeatCount="indefinite"/></rect><text x="33.5" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">Prisma</text></g><g transform="translate(894 456)"><rect width="87" height="31" rx="9" fill="#111D31" stroke="url(#accent)" stroke-opacity=".34"><animate attributeName="stroke-opacity" values=".22;.68;.22" dur="5.37s" repeatCount="indefinite"/></rect><text x="43.5" y="20" text-anchor="middle" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5">REST APIs</text></g>
+      <path d="M508 502H1098" stroke="#243047" stroke-opacity=".9"/>
+      <text x="508" y="527" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.3">FIND ME ONLINE</text>
+      <g transform="translate(508 541)" fill="none" stroke="#F8FAFC" stroke-opacity=".86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(0 0)">
+          <circle cx="9" cy="0" r="8"/><path d="M5 0l3 3 5-6"/>
+        </g>
+        <text x="23" y="4" fill="#F8FAFC" stroke="none" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11">GitHub</text>
+        <g transform="translate(112 0)"><rect x="0" y="-8" width="16" height="16" rx="3"/><path d="M4 -3h8M4 1h8M4 5h5"/></g>
+        <text x="135" y="4" fill="#F8FAFC" stroke="none" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11">LinkedIn</text>
+        <g transform="translate(242 0)"><path d="M-7 -5c-5 0-5 10 0 10 2 0 4-1 5-3 1 2 3 3 5 3 5 0 5-10 0-10-2 0-4 1-5 3-1-2-3-3-5-3z"/></g>
+        <text x="260" y="4" fill="#F8FAFC" stroke="none" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11">Social</text>
+        <g transform="translate(343 0)"><circle cx="0" cy="0" r="8"/><path d="M-4 0h8M0 -4v8"/></g>
+        <text x="360" y="4" fill="#F8FAFC" stroke="none" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11">Portfolio</text>
+      </g>
+    </g>
+
+    <!-- Sparse ambient particles -->
+    <g fill="url(#accent)">
+      <circle cx="451" cy="142" r="2"><animate attributeName="cy" values="142;128;142" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".25;.9;.25" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="1147" cy="202" r="2"><animate attributeName="cy" values="202;188;202" dur="4.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;.75;.2" dur="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="452" cy="470" r="1.7"><animate attributeName="cy" values="470;458;470" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;.8;.2" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="1137" cy="512" r="1.7"><animate attributeName="cy" values="512;499;512" dur="4.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".15;.8;.15" dur="3.1s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Animated border shimmer -->
+    <rect x="18" y="18" width="1144" height="574" rx="28" fill="none" stroke="url(#accent)" stroke-width="1.2" stroke-opacity=".72" stroke-dasharray="120 720">
+      <animate attributeName="stroke-dashoffset" values="0;-1680" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".28;.75;.28" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="18" y="18" width="1144" height="574" rx="28" fill="none" stroke="#FFFFFF" stroke-opacity=".10"/>
+  </g>
+</svg>
